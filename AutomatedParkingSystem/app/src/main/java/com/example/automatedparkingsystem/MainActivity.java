@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.content.Context;
+import android.graphics.Color;
 import android.location.Address;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        Set Variables for Request and Response
         buttonRequest = findViewById(R.id.requestBtn);
         responseText = findViewById(R.id.responseText);
+
 
 //        Parking Slot buttons
         btnOne = findViewById(R.id.btnOne);
@@ -251,13 +253,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void run() {
 
                 String s = "";
-                if (stringData.equals("Success") || stringData.equals("Fail")) {
+                if (stringData.equals("Success"))
+                {
                     responseText.setText("Booking : " + stringData);
+                    responseText.setTextColor(getResources().getColor(R.color.green));
+
+                } if (stringData.equals("Fail")) {
+                    responseText.setText("Booking : " + stringData);
+                    responseText.setTextColor(getResources().getColor(R.color.red));
 //                    resultText.setText(s);
                 }
 
-                if (stringData.equals("Status") || stringData.equals("Booking")) {
+                if (stringData.equals("Status"))
+                {
                     responseText.setText("Error : " + stringData);
+                    responseText.setTextColor(getResources().getColor(R.color.green));
+
+                } if (stringData.equals("Booking")) {
+                    responseText.setText("Error : " + stringData);
+                    responseText.setTextColor(getResources().getColor(R.color.red));
                 }
 
 
