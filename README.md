@@ -26,3 +26,6 @@
 
   - RaspberryPi
   - IR Sensors
+  
+ ## Automated-Parking-System
+ To view demo of application click on [YouTube](https://www.youtube.com/watch?v=jnc7pJVHnps&feature=youtu.be).
