@@ -13,8 +13,7 @@
 - CONNECT - Once you enter valid IP and PORT client will connect to Server and request for Status of the available slot
 - Parking Slots - Based on the availability of the slots Button 1,2,3,4 will be enabled or disabled 
 - Based on available slot select the parking slot number and enter REQUEST
-- REQUEST - To make the reservation of the slot, once you request slot, a response will   
-   will be displayed below.
+- REQUEST - To make the reservation of the slot, once you request slot, a response will displayed below.
 - REFRESH - To update the available parking slots
 
 ## Requirements
